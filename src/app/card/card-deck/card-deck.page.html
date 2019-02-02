@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Card Decks
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let card of cards">
+      <ion-avatar slot="start" >
+       <img [src]="card.img" height="56" width="56"/>
+      </ion-avatar>
+      <ion-label >
+        <h2>{{card.name}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
